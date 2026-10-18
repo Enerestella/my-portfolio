@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#home" class="logo">&lt;Dev/&gt;</a>
+            <button id="menu-btn" class="menu-btn" aria-label="Toggle menu" aria-expanded="false">=</button>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li></ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Project</a></li>
+                <li><a href="#contact"></a>Contact</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <p class="small-title">WELCOME TO MY PORTFOLIO</p>
+            <h1>Hello, i'm <span>Flourish</span></h1>
+            <h2>Aspiring Front-end developer</h2>
+            <p class="description">I am learning to create beautiful, responsive and user-friendly websites with HTML, CSS and JavaScript.</p>
+            <a href="#project" class="button">View My Projects</a>
+        </section>
+
+        <section class="section" id="about">
+            <p class="small-title">GET TO KNOW ME</p>
+            <h2>About <span>Me</span></h2>
+            <p>My name is Flourish, and i am an spiring Front-end web developer. I  enjoy learning how websites are built and how to make them look attractive and to use. I am currently improving my skills in HTML,CSS and JavaScript by practising and building small project. My goal is to become a skilled developer and work on real-world websites.</p>
+        </section>
+
+        <section class="section" id="skills">
+            <p class="small-title">WHAT I'M LEARNING</p>
+            <h2>My <span>skills</span></h2>
+            <div class="skills">
+                <div class="card">
+                    <h3>HTML</h3>
+                    <p>Creating the structure of the websites.</p>
+                </div>
+                
+                <div class="card">
+                    <h3>CSS</h3>
+                    <p>Adding, colours, layouts and styles.</p>
+                </div>
+
+                <div class="card">
+                    <h3>JavaScript</h3>
+                    <p>Learning to make websites interactive</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="projects">
+            <p class="small-title">MY WORK</p>
+            <h2>My <span>Projects</span></h2>
+            <div class="project">
+                <div class="card">
+                    <h3>Project 1: Registration Form</h3>
+                    <p>A simple registration form designed to collect information from user.</p>
+                    <p class="technology">HTML and CSS</p>
+                </div>
+
+                <div class="card">
+                    <h3>Project 2: Navigation Bar</h3>
+                    <p>A website navigation bar helps visitors move between different section.</p>
+                    <p class="technology">HTML and CSS</p>
+                </div>
+
+                <div class="card">
+                    <h3>Project 3: My Portfolio</h3>
+                    <p>This portfolio introduces me, shows my skill and presents my work.</p>
+                    <p class="technology">HTML, CSS and JavaScript</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="Contact">
+            <p class="small-title">LET'S CONNECT</p>
+            <h2>Contact <span>Me</span></h2>
+            <p>Do you have a question or an opportunity? Fill in the form below to get in touch</p>
+            <form class="contact-form" action="mailto:enerestella82@gmail.com"method="post"  enctype="text/plain">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="Name" placeholder="Enter your name" required>
+
+                <label for="email">Your Email</label>
+                <input type="text" name="email" id="email" placeholder="Enter your email" required> 
+
+                <label for="message">Your Message</label>
+                <textarea name="message" id="message"></textarea>
+                <button type="submit" class="button">Send Message</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>©️ <span id="year"></span> Your Name. All rights reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
