@@ -256,9 +256,20 @@ section > p:not(.small-title){
         width: 100%;
     }
 
-    .contact-form input{
-        grid-template-columns: minmax(0, 1fr);
-        gap: 16px;
+    .contact-form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .input-group:nth-child(3){
+        grid-column: span 2;
+    }
+
+    .send-message{
+        grid-column: span 2;
+        justify-self: start;
+        min-width: 150px;
     }
     footer{
         font-size: 12px;
